@@ -4,13 +4,12 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.antlr.v4.runtime.misc.NotNull;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Table(name = "posts",
-        uniqueConstraints = {@UniqueConstraint(columnNames = {"Title"})}
-     )
+@Table(name = "posts")
 @Entity
 public class Post {
 
